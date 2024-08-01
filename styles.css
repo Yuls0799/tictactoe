@@ -39,3 +39,47 @@ body {
     margin-bottom: 20px;
 }
 
+/*Container*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.circle, .square, .triangle {
+    position: absolute;
+}
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    top: 10%;
+    left: 10%;
+}
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid green;
+    top: 70%;
+    left: 70%;
+}

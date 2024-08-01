@@ -13,7 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const resetButton = document.getElementById("reset");
     const p1scoreElement = document.getElementById("player1-score");
     const p2scoreElement = document.getElementById("player2-score");
-
+    const canvas = document.getElementById('canvas');
+    const contexto = canvas.getContext('2d');
+    
     let p1name = "";
     let p2name = "";
     let p1score = 0;
