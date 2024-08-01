@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Loading to Start-->
+
+    <div id="loading">Loading...</div>
+    <div id="game" style="display:none;">
+        <div id="player-options">
+            <button id="vsPlayer">Jugador vs Jugador</button>
+            <button id="vsAI">Jugador vs IA</button>
+        </div>
+
+    <!--Placeholders for names-->
+
+        <div id="player-names" style="display:none;">
+            <input type="text" id="player1-name" placeholder="Nombre Jugador 1">
+            <input type="text" id="player2-name" placeholder="Nombre Jugador 2" style="display:none;">
+            <button id="start-game">Empezar</button>
+        </div>
+    
+    <!--Grid-->
+
+        <div id="tic-tac-toe" style="display:none;">
+            <div id="scoreboard">
+                <span id="player1-score">0</span> - <span id="player2-score">0</span>
+            </div>
+            <div class="grid">
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+            </div>
+        </div>
+
+    <!--To reset-->
+
+        <div id="reset-board"><button id="reset">Reiniciar</button></div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
