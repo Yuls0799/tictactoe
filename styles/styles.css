@@ -5,7 +5,9 @@ body {
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-image: url('../resources/background.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .loading-container {
@@ -29,7 +31,7 @@ body {
     100% { width: 100px; }
 }
 
-.setup-container, .game-container {
+.config-container, .game-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,4 +86,16 @@ h1 {
     justify-content: space-around;
     width: 100%;
     margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-image: url('../resources/backgroundtablet.png');
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background-image: url('../resources/backgroundmobile.png');
+    }
 }
