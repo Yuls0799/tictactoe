@@ -14,9 +14,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-color: #333;
+    width: 50%;
+    background-image: url('../resources/background.png');
 }
 
 .progress-bar {
@@ -96,6 +95,18 @@ h1 {
 
 @media (max-width: 480px) {
     body {
+        background-image: url('../resources/backgroundmobile.png');
+    }
+}
+
+@media (max-width: 768px) {
+    .loading-container {
+        background-image: url('../resources/backgroundtablet.png');
+    }
+}
+
+@media (max-width: 480px) {
+    .loading-container {
         background-image: url('../resources/backgroundmobile.png');
     }
 }
