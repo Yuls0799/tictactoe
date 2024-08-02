@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
+    <title>Loading</title>
     <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="stylesheet" href="../styles/_reset.css">
+    <script>
+        setTimeout(() => {
+            window.location.href = 'config.html';
+        }, 3000);
+    </script>
 </head>
 <body>
-    <!--Loading to Start-->
-    <div class="container-loading" id="loading">
-        <div class="progress"></div>
-        <p class="progress-done" data - done = "80">Loading...</p>
+    <div class="loading-container">
+        <div class="progress-bar"></div>
     </div>
-    <script src="/js/index.js"></script>
 </body>
 </html>
+
