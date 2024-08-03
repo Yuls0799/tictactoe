@@ -15,7 +15,6 @@ body {
     justify-content: center;
     align-items: center;
     width: 50%;
-    background-image: url('../resources/background.png');
 }
 
 .progress-bar {
@@ -43,6 +42,7 @@ body {
 
 h1 {
     margin-bottom: 20px;
+    color: white;
 }
 
 .button {
