@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <!-- Alerta de Victoria -->
+  <div class="alert-overlay" id="victoryAlert">
+    <div class="alert-box">
+      <img src="../resources/winner.png" alt="Victoria" />
+      <h1>Victoria</h1>
+      <p>Nombre del Ganador</p>
+      <div class="stats-container">
+        <p>Ganador: Nombre y Puntos</p>
+        <p>Perdedor: Nombre y Puntos</p>
+        <p>Empates: Número de Empates</p>
+      </div>
+      <div class="button-group">
+        <button id="nextRound">Próximo round</button>
+        <button id="exitGame" class="secondary">Salir</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Alerta de Confirmación para Salir -->
+  <div class="alert-overlay" id="exitConfirm">
+    <div class="alert-box">
+      <h1>¿Seguro que quieres reiniciar la partida?</h1>
+      <div class="button-group">
+        <button id="confirmExit">Reiniciar Partida</button>
+        <button id="cancelExit" class="secondary">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Alerta de Perdedor -->
+  <div class="alert-overlay" id="loserAlert">
+    <div class="alert-box">
+      <img src="../resources/loser.png" alt="Perdedor" />
+      <h1>Perdedor</h1>
+      <p>Nombre del Perdedor</p>
+      <div class="stats-container">
+        <p>Ganador: Nombre y Puntos</p>
+        <p>Perdedor: Nombre y Puntos</p>
+        <p>Empates: Número de Empates</p>
+      </div>
+      <div class="button-group">
+        <button id="nextRoundLoser">Próximo round</button>
+        <button id="exitGameLoser" class="secondary">Salir</button>
+      </div>
+    </div>
+  </div>
+  <script src="alerts.html"></script>
+</body>
+</html>
