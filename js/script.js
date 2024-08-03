@@ -11,7 +11,7 @@ document.getElementById('name-form').addEventListener('submit', function(event) 
     const player1Name = document.getElementById('player1-name').value;
     const player2Name = document.getElementById('player2-name').value || 'CPU';
     alert(`Juego iniciado: ${player1Name} vs ${player2Name}`);
-    // Redirige a la página del juego
+    
     window.location.href = 'tictac.html';
 });
 
@@ -24,3 +24,5 @@ function showNameEntry(showPlayer2) {
         document.getElementById('player2-name').classList.add('hidden');
     }
 }
+
+const playerName = "Nombre del Jugador"
