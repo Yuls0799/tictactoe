@@ -1,3 +1,19 @@
+
+document.addEventListener('DOMContentLoaded', function() {
+    const buttonOrange = document.getElementById('button-orange');
+
+    if (buttonOrange) {
+
+        buttonOrange.addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+    } else {
+        console.error('No se encontró el elemento con id "button-orange".');
+    }
+});
+
+
+
 class Matrix {
     constructor() {
         this.board = Array.from(Array(3), () => Array(3).fill(null));
@@ -113,3 +129,6 @@ resetButton.addEventListener('click', function() {
     updateStatus("It's player 1's turn");
     this.disabled = true;
 });
+
+
+//* Redirección */

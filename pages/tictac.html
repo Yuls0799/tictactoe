@@ -4,13 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic Tac Toe</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="../styles/styles.css" />
   </head>
   <body>
+    <div class="options-container">
+      <article id="button-orange" class="button-container-orange">
+        <img class="icon" src="../resources/back.png" alt="">
+      </article>
+    
+      <article  class="button-container-blue">
+        <img class="icon" src="../resources/return.png" alt="">
+      </article>
+    </div>
+
     <div class="config-container">
+
       <h2>Tic Tac Toe</h2>
 
       <p id="game-status">It's player 1's turn</p>
@@ -98,14 +107,30 @@
                 <span class="checkmark"></span>
               </label>
             </div>
-            <div class="line t2">
-              <button value="Refresh Page" disabled>Reset</button>
-            </div>
           </section>
 
         </div>
       </main>
     </div>
+<!-- 
+    <script>
+      // Espera a que el DOM esté completamente cargado antes de agregar el listener
+      document.addEventListener('DOMContentLoaded', function() {
+          // Selecciona el elemento con id "button-orange"
+          const buttonOrange = document.getElementById('button-orange');
+
+          // Verifica si el elemento existe
+          if (buttonOrange) {
+              // Añade un event listener para el clic
+              buttonOrange.addEventListener('click', function() {
+                  // Redirige a la página index.html
+                  window.location.href = 'index.html';
+              });
+          } else {
+              console.error('No se encontró el elemento con id "button-orange".');
+          }
+      });
+  </script> -->
     <script src="/js/tictac.js"></script>
   </body>
 </html>
