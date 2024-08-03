@@ -348,6 +348,7 @@ form button {
 }
 
 /*Config mediaqueries*/
+
 @media (max-width: 768px) {
     form input {
         width: calc(100% - 15px);
@@ -360,7 +361,6 @@ form button {
     }
 }
 
-/* Pantallas de 576px o menos (móviles en orientación vertical) */
 @media (max-width: 576px) {
     .button-blue, .button-orange, .button-green {
         font-size: 14px; /* Tamaño de fuente reducido para botones */
