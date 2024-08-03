@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body>
+    <div class="config-container">
+      <h2>Tic Tac Toe</h2>
+
+      <p id="game-status">It's player 1's turn</p>
+
+      <!-- tic tac -->
+      <main class="main-tic">
+         <div class="tic-container">
+            <div class="stats-grid">
+                <div class="line-stats">
+                    <p class="p-w">JE</p>
+                    <p class="p-w">CPU</p>
+                    <div>
+                        <img src="../resources/empate.png" alt="empate" />
+                    </div>
+                </div>
+        
+                <div class="results-stats">
+                    <p class="p-p">0 GANADAS</p>
+                    <p class="p-p">0 GANADAS</p>
+                    <p class="p-p">0 EMPATES</p>
+                </div>
+            </div>
+        </div>
+
+          <section class="frame">
+            <div class="line">
+              <label class="container">
+                <input
+                  type="checkbox"
+                  name="00"
+                  class="column0 line0 diagonal0"
+                />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">
+                <input type="checkbox" name="01" class="column1 line0" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">
+                <input
+                  type="checkbox"
+                  name="02"
+                  class="column2 line0 diagonal1"
+                />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="line">
+              <label class="container">
+                <input type="checkbox" name="10" class="column0 line1" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">
+                <input
+                  type="checkbox"
+                  name="11"
+                  class="column1 line1 diagonal0 diagonal1"
+                />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">
+                <input type="checkbox" name="12" class="column2 line1" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="line">
+              <label class="container">
+                <input
+                  type="checkbox"
+                  name="20"
+                  class="column0 line2 diagonal1"
+                />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">
+                <input type="checkbox" name="21" class="column1 line2" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">
+                <input
+                  type="checkbox"
+                  name="22"
+                  class="column2 line2 diagonal0"
+                />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="line t2">
+              <button value="Refresh Page" disabled>Reset</button>
+            </div>
+          </section>
+
+        </div>
+      </main>
+    </div>
+    <script src="/js/tictac.js"></script>
+  </body>
+</html>
