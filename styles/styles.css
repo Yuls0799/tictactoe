@@ -367,21 +367,21 @@ form button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    background-image: url('../resources/popup.png')
   }
   
   .modal-content {
     text-align: center;
   }
   
-  .hidden {
-    display: none;
+  .modal-content h2{
+    color: white;
   }
-  
+
   .overlay {
     position: fixed;
     top: 0;
@@ -390,6 +390,7 @@ form button {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     z-index: 999;
+   
   }
   
 
