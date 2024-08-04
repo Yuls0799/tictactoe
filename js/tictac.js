@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const buttonOrange = document.getElementById('button-orange');
     const restartButton = document.getElementById('restart-button');
     const homeButton = document.getElementById('home-button');
+    const returnButton = document.querySelector('.button-container-blue'); // Seleccionamos el botón de return
     const resultModal = document.getElementById('result-modal');
     const resultMessage = document.getElementById('result-message');
     const player1Wins = document.getElementById('player1-wins');
@@ -14,6 +15,14 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     } else {
       console.error('No se encontró el elemento con id "button-orange".');
+    }
+  
+    if (returnButton) {
+      returnButton.addEventListener('click', function() {
+        showResultModal('¿Seguro que quieres salir y reiniciar el juego?');
+      });
+    } else {
+      console.error('No se encontró el elemento con clase "button-container-blue".');
     }
   
     class Matrix {
