@@ -13,124 +13,89 @@
         <img class="icon" src="../resources/back.png" alt="">
       </article>
     
-      <article  class="button-container-blue">
+      <article class="button-container-blue">
         <img class="icon" src="../resources/return.png" alt="">
       </article>
     </div>
 
     <div class="config-container">
-
       <h2>Tic Tac Toe</h2>
-
       <p id="game-status">It's player 1's turn</p>
 
       <!-- tic tac -->
       <main class="main-tic">
-         <div class="tic-container">
-            <div class="stats-grid">
-                <div class="line-stats">
-                    <p class="p-w">JE</p>
-                    <p class="p-w">CPU</p>
-                    <div>
-                        <img src="../resources/empate.png" alt="empate" />
-                    </div>
-                </div>
-        
-                <div class="results-stats">
-                    <p class="p-p">0 GANADAS</p>
-                    <p class="p-p">0 GANADAS</p>
-                    <p class="p-p">0 EMPATES</p>
-                </div>
+        <div class="tic-container">
+          <div class="stats-grid">
+            <div class="line-stats">
+              <p class="p-w">JE</p>
+              <p class="p-w">CPU</p>
+              <div>
+                <img src="../resources/empate.png" alt="empate" />
+              </div>
             </div>
+            <div class="results-stats">
+              <p id="player1-wins" class="p-p">0 GANADAS</p>
+              <p id="player2-wins" class="p-p">0 GANADAS</p>
+              <p id="draws" class="p-p">0 EMPATES</p>
+            </div>
+          </div>
         </div>
 
-          <section class="frame">
-            <div class="line">
-              <label class="container">
-                <input
-                  type="checkbox"
-                  name="00"
-                  class="column0 line0 diagonal0"
-                />
-                <span class="checkmark"></span>
-              </label>
-              <label class="container">
-                <input type="checkbox" name="01" class="column1 line0" />
-                <span class="checkmark"></span>
-              </label>
-              <label class="container">
-                <input
-                  type="checkbox"
-                  name="02"
-                  class="column2 line0 diagonal1"
-                />
-                <span class="checkmark"></span>
-              </label>
-            </div>
-            <div class="line">
-              <label class="container">
-                <input type="checkbox" name="10" class="column0 line1" />
-                <span class="checkmark"></span>
-              </label>
-              <label class="container">
-                <input
-                  type="checkbox"
-                  name="11"
-                  class="column1 line1 diagonal0 diagonal1"
-                />
-                <span class="checkmark"></span>
-              </label>
-              <label class="container">
-                <input type="checkbox" name="12" class="column2 line1" />
-                <span class="checkmark"></span>
-              </label>
-            </div>
-            <div class="line">
-              <label class="container">
-                <input
-                  type="checkbox"
-                  name="20"
-                  class="column0 line2 diagonal1"
-                />
-                <span class="checkmark"></span>
-              </label>
-              <label class="container">
-                <input type="checkbox" name="21" class="column1 line2" />
-                <span class="checkmark"></span>
-              </label>
-              <label class="container">
-                <input
-                  type="checkbox"
-                  name="22"
-                  class="column2 line2 diagonal0"
-                />
-                <span class="checkmark"></span>
-              </label>
-            </div>
-          </section>
-
-        </div>
+        <section class="frame">
+          <div class="line">
+            <label class="container">
+              <input type="checkbox" name="00" class="column0 line0 diagonal0" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">
+              <input type="checkbox" name="01" class="column1 line0" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">
+              <input type="checkbox" name="02" class="column2 line0 diagonal1" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="line">
+            <label class="container">
+              <input type="checkbox" name="10" class="column0 line1" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">
+              <input type="checkbox" name="11" class="column1 line1 diagonal0 diagonal1" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">
+              <input type="checkbox" name="12" class="column2 line1" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="line">
+            <label class="container">
+              <input type="checkbox" name="20" class="column0 line2 diagonal1" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">
+              <input type="checkbox" name="21" class="column1 line2" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">
+              <input type="checkbox" name="22" class="column2 line2 diagonal0" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </section>
       </main>
     </div>
-<!-- 
-    <script>
-      // Espera a que el DOM esté completamente cargado antes de agregar el listener
-      document.addEventListener('DOMContentLoaded', function() {
-          // Selecciona el elemento con id "button-orange"
-          const buttonOrange = document.getElementById('button-orange');
 
-          // Verifica si el elemento existe
-          if (buttonOrange) {
-              // Añade un event listener para el clic
-              buttonOrange.addEventListener('click', function() {
-                  // Redirige a la página index.html
-                  window.location.href = 'index.html';
-              });
-          } else {
-              console.error('No se encontró el elemento con id "button-orange".');
-          }
-      });
-  </script> -->
+    <div id="result-modal" class="modal hidden">
+      <div class="modal-content">
+        <p id="result-message"></p>
+        <button id="restart-button" class="button button-orange">Reiniciar</button>
+        <button id="home-button" class="button button-blue">Volver al inicio</button>
+      </div>
+    </div>
+
     <script src="/js/tictac.js"></script>
   </body>
 </html>
