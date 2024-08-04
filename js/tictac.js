@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   if (returnButton) {
       returnButton.addEventListener('click', function() {
-          showResultModal('¿Seguro que quieres salir y reiniciar el juego?');
+          showResultModal('¿Seguro que desea reiniciar la partida?');
       });
   } else {
       console.error('No se encontró el elemento con clase "button-container-blue".');

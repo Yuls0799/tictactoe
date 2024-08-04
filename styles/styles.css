@@ -395,8 +395,8 @@ form button {
 
 @media (max-width: 576px) {
     .button-blue, .button-orange, .button-green {
-        font-size: 14px; /* Tamaño de fuente reducido para botones */
-        padding: 8px 12px; /* Tamaño del padding reducido */
+        font-size: 14px; 
+        padding: 8px 12px; 
     }
 
     form input {
