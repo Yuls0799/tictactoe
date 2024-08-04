@@ -357,6 +357,38 @@ form button {
     z-index: 999;
    
   }
+
+  /*circles*/
+.container-circle {
+    display: flex;
+    height: 100px;
+    gap: 50px; 
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: #000000; 
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid #000000; 
+    background-color: #ffffff; 
+}
+
+.player1 {
+    background-color: #ffffff; 
+}
+
+.player2 {
+    background-color: #ffffff;
+}
+
+
   
 
 @media (max-width: 768px) {
