@@ -1,46 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic Tac Toe</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="../styles/styles.css" />
-  </head>
-  <body>
+</head>
+<body>
     <div class="options-container">
-      <article id="button-orange" class="button-container-orange">
-        <img class="icon" src="../resources/back.png" alt="">
-      </article>
-    
-      <article class="button-container-blue">
-        <img class="icon" src="../resources/return.png" alt="">
-      </article>
+        <article id="button-orange" class="button-container-orange">
+            <img class="icon" src="../resources/back.png" alt="">
+        </article>
+        <article class="button-container-blue">
+            <img class="icon" src="../resources/return.png" alt="">
+        </article>
     </div>
 
     <div class="config-container">
-      <h2>Tic Tac Toe</h2>
-      <p id="game-status">It's player 1's turn</p>
+        <h2>Tic Tac Toe</h2>
+        <p id="game-status">It's player 1's turn</p>
 
-      <!-- tic tac -->
-      <main class="main-tic">
-        <div class="tic-container">
-          <div class="stats-grid">
-            <div class="line-stats">
-              <p class="p-w">JE</p>
-              <p class="p-w">CPU</p>
-              <div>
-                <img src="../resources/empate.png" alt="empate" />
-              </div>
+        <!-- tic tac -->
+        <main class="main-tic">
+            <div class="tic-container">
+                <div class="stats-grid">
+                    <div class="line-stats">
+                        <p class="p-w" id="player1-shortname">P1</p>
+                        <p class="p-w" id="player2-shortname">P2</p>
+                        <div>
+                            <img src="../resources/empate.png" alt="empate" />
+                        </div>
+                    </div>
+                    <div class="results-stats">
+                        <p id="player1-wins" class="p-p">0 GANADAS</p>
+                        <p id="player2-wins" class="p-p">0 GANADAS</p>
+                        <p id="draws" class="p-p">0 EMPATES</p>
+                    </div>
+                </div>
             </div>
-            <div class="results-stats">
-              <p id="player1-wins" class="p-p">0 GANADAS</p>
-              <p id="player2-wins" class="p-p">0 GANADAS</p>
-              <p id="draws" class="p-p">0 EMPATES</p>
-            </div>
-          </div>
-        </div>
-
         <section class="frame">
           <div class="line">
             <label class="container">
