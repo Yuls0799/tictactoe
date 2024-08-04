@@ -42,10 +42,10 @@ document.addEventListener('DOMContentLoaded', function() {
       checkVictory(player) {
           for (let i = 0; i < 3; i++) {
               if (this.board[i].every(cell => cell === player)) {
-                  return { player: player, type: 'line', index: i };
+                  return { player: player, type: 'linea', index: i };
               }
               if (this.board.map(row => row[i]).every(cell => cell === player)) {
-                  return { player: player, type: 'column', index: i };
+                  return { player: player, type: 'columna', index: i };
               }
           }
           if (this.board[0][0] === player && this.board[1][1] === player && this.board[2][2] === player) {
@@ -113,20 +113,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
           if (result) {
               boxes.forEach(b => b.disabled = true);
-              updateStatus(`${player.getName()} wins on a ${result.type} at index ${result.index}!`);
+              updateStatus(`${player.getName()} gana en un ${result.type} en el índice ${result.index}!`);
               updateScore(result.player);
-              showResultModal(`${player.getName()} wins!`);
+              showResultModal(`${player.getName()} gana!`);
               return;
           }
 
           this.disabled = true;
           player.play();
-          updateStatus(`It's ${player.getName()}'s turn`);
+          updateStatus(`Es el turno de ${player.getName()}`);
 
           if (player.round === 9) {
-              updateStatus('It\'s a draw!');
+              updateStatus('Es un empate');
               updateScore(null);
-              showResultModal('It\'s a draw!');
+              showResultModal('Es un empate');
           }
       });
   });
@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', function() {
       matrix.board = Array.from(Array(3), () => Array(3).fill(null));
       player.turn = 1;
       player.round = 0;
-      updateStatus(`It's ${player.getName()}'s turn`);
+      updateStatus(`Es el turno de ${player.getName()}`);
       resultModal.classList.add('hidden');
   });
 
