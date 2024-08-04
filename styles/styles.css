@@ -68,7 +68,7 @@ h2 {
 
 .button-blue { background: #007bff; color: #fff; }
 .button-orange { background: #ff7f00; color: #fff; }
-.button-green { background: #28a745; color: #fff; }
+.button-green { background: #EF9519; color: #fff; }
 .button-red { background: #dc3545; color: #fff; }
 
 .hidden {
@@ -303,11 +303,11 @@ button {
 }
 
 .button-green {
-    background-color: #28a745;
+    background-color: #EF9519;
 }
 
 .button-green:hover {
-    background-color: #218838;
+    background-color: #EF9519;
 }
 
 form input {
