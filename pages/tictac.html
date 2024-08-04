@@ -99,14 +99,29 @@
     <!--modal-->
     <div id="result-modal" class="modal hidden">
       <div class="modal-content">
-        <img src="../resources/winner.png" alt="winner">
-        <h2>Victoria</h2>
-        <p id="result-message"></p>
-        <button id="restart-button" class="button button-orange">Proximo round</button>
-        <button id="home-button" class="button button-blue">Salir</button>
-      </div>
+          <img src="../resources/winner.png" alt="winner">
+          <h2>Victoria</h2>
+          <p id="result-message"></p>
+          <div class="tic-container">
+              <div class="stats-grid">
+                  <div class="line-stats">
+                      <p class="p-w" id="modal-player1-shortname">P1</p>
+                      <p class="p-w" id="modal-player2-shortname">P2</p>
+                      <div>
+                          <img src="../resources/empate.png" alt="empate" />
+                      </div>
+                  </div>
+                  <div class="results-stats">
+                      <p id="modal-player1-wins" class="p-p">0 GANADAS</p>
+                      <p id="modal-player2-wins" class="p-p">0 GANADAS</p>
+                      <p id="modal-draws" class="p-p">0 EMPATES</p>
+                  </div>
+              </div>
+          </div>
+          <button id="restart-button" class="button button-orange">Proximo round</button>
+          <button id="home-button" class="button button-blue">Salir</button>
+        </div>
     </div>
-
     <script src="/js/tictac.js"></script>
   </body>
 </html>

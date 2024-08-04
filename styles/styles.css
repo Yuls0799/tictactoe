@@ -66,10 +66,10 @@ h2 {
     cursor: pointer;
 }
 
-.button-blue { background: #007bff; color: #fff; }
+/*.button-blue { background: #007bff; color: #fff; }
 .button-orange { background: #ff7f00; color: #fff; }
 .button-green { background: #EF9519; color: #fff; }
-.button-red { background: #dc3545; color: #fff; }
+.button-red { background: #dc3545; color: #fff; }*/
 
 .hidden {
     display: none;
@@ -287,27 +287,33 @@ button {
 /* Config */
 
 .button-blue {
-    background-color: #007bff;
+    color: white;
+    background-color: #ED8B00;
 }
 
 .button-blue:hover {
-    background-color: #0069d9;
+    color: white;
+    background-color: #ED8B00;
 }
 
 .button-orange {
-    background-color: #ff851b;
+    color: white;
+    background-color: #2AB4FD;
 }
 
 .button-orange:hover {
-    background-color: #ff751a;
+    color: white;
+    background-color: #2AB4FD;
 }
 
 .button-green {
-    background-color: #EF9519;
+    color: white;
+    background-color:#ED8B00;
 }
 
 .button-green:hover {
-    background-color: #EF9519;
+    color: white;
+    background-color: #ED8B00;
 }
 
 form input {

@@ -131,6 +131,20 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 
+    function updateModalStats() {
+        document.getElementById('modal-player1-shortname').textContent = player1ShortName.textContent;
+        document.getElementById('modal-player2-shortname').textContent = player2ShortName.textContent;
+        document.getElementById('modal-player1-wins').textContent = player1Wins.textContent;
+        document.getElementById('modal-player2-wins').textContent = player2Wins.textContent;
+        document.getElementById('modal-draws').textContent = draws.textContent;
+    }
+
+    function showResultModal(message) {
+        resultMessage.textContent = message;
+        updateModalStats(); 
+        resultModal.classList.remove('hidden');
+    }
+
   restartButton.addEventListener('click', function() {
       boxes.forEach(box => {
           box.disabled = false;
