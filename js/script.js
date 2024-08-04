@@ -25,4 +25,3 @@ function showNameEntry(showPlayer2) {
     }
 }
 
-const playerName = "Nombre del Jugador"
