@@ -2,7 +2,6 @@
 
 Welcome to the Tic Tac Toe game! This project allows you to play Tic Tac Toe either by yourself or with someone else. You can personalize the game by entering your name and choosing your opponent. 
 ![Let's play!](./resources/Media/tictac.jpeg)
-## Screenshots
 
 ### Personal Play
 
