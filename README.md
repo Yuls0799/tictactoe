@@ -48,3 +48,56 @@ This project is licensed under the MIT License.
 ---
 ## Explanation in video 🧠
 (https://youtu.be/hrH7s-SCSRY)
+
+---
+
+# Juego de Tres en Raya 🤓✅
+
+¡Bienvenido al juego de Tres en Raya! Este proyecto te permite jugar al Tres en Raya solo o con otra persona. Puedes personalizar el juego ingresando tu nombre y eligiendo a tu oponente.
+![¡Vamos a jugar!](./resources/Media/tictac.jpeg)
+
+### Juego Personal 🐧
+
+![Captura de pantalla del juego personal](./resources/Media/first_photo.jpeg)
+
+### Jugar con Alguien Más 👩🏻‍💻
+
+![Captura de pantalla de jugar con alguien más](./resources/Media/two_players.jpeg)
+
+## Primeros Pasos 🔗
+
+Para ejecutar este proyecto localmente, sigue estos pasos:
+
+1. **Clona el repositorio:**
+
+Bitbucket:
+```bash
+   git clone https://yzam0203@bitbucket.org/yulianazorrilla/ti-tac-toe-yz.git
+   ```
+
+Github:
+   ```bash
+   git clone https://github.com/Yuls0799/tictactoe.git
+   ```
+
+2. **Ejecuta el proyecto usando Live Server:**
+   - Instala la extensión Live Server en tu editor de código (por ejemplo, Visual Studio Code).
+   - Inicia el servidor haciendo clic derecho en `index.html` y seleccionando "Open with Live Server".
+
+## Características 😎
+
+- **Jugar Solo**: Desafíate contra la computadora.
+- **Jugar con un Amigo**: Invita a un amigo a unirse a la diversión.
+- **Mostrar Puntuación**: Mantén un registro de tus victorias y derrotas.
+
+## Contribución
+
+Siéntete libre de contribuir a este proyecto enviando una solicitud de extracción o abriendo un issue.
+
+## Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT.
+
+---
+## Explicación en video 🧠
+(https://youtu.be/hrH7s-SCSRY)
