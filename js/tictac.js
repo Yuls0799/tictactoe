@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
               boxes.forEach(b => b.disabled = true);
               updateStatus(`${player.getName()} gana en un ${result.type} en el índice ${result.index}!`);
               updateScore(result.player);
-              showResultModal(`${player.getName()} gana!`);
+              showResultModal(`${player.getName()}`);
               return;
           }
 
