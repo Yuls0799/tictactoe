@@ -189,9 +189,8 @@ button {
 
 
 }
+
 /* checkbox styling section */
-
-
 .stats-grid {
     display: grid;
     grid-template-rows: auto auto; 
@@ -392,7 +391,7 @@ form button {
     background-color: #ffffff;
 }
 
-
+/*Media queries*/
   
 
 @media (max-width: 768px) {
