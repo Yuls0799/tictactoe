@@ -30,15 +30,6 @@ body {
     100% { width: 100px; }
 }
 
-/* .config-container, .game-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background: none;
-    border-radius: 8px;
-} */
-
 .config-container{
     margin-top: -2rem;
 }
@@ -65,11 +56,6 @@ h2 {
     border-radius: 4px;
     cursor: pointer;
 }
-
-/*.button-blue { background: #007bff; color: #fff; }
-.button-orange { background: #ff7f00; color: #fff; }
-.button-green { background: #EF9519; color: #fff; }
-.button-red { background: #dc3545; color: #fff; }*/
 
 .hidden {
     display: none;
