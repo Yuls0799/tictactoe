@@ -6,11 +6,11 @@ Welcome to the Tic Tac Toe game! This project allows you to play Tic Tac Toe eit
 
 ### Personal Play
 
-![Personal Play Screenshot](link-to-your-photo)
+![Personal Play Screenshot](first_photo.jpeg)
 
 ### Play with Someone Else
 
-![Play with Someone Else Screenshot](link-to-your-photo)
+![Play with Someone Else Screenshot](two_players.jpeg)
 
 ## Getting Started
 
@@ -36,17 +36,7 @@ To run this project locally, follow these steps:
    npm install
    ```
 
-5. **Install Yarn (if not already installed):**
-   ```bash
-   npm install -g yarn
-   ```
-
-6. **Install project dependencies using Yarn:**
-   ```bash
-   yarn install
-   ```
-
-7. **Run the project using Live Server:**
+5.  **Run the project using Live Server:**
    - Install the Live Server extension in your code editor (e.g., Visual Studio Code).
    - Launch the server by right-clicking on `index.html` and selecting "Open with Live Server."
 
