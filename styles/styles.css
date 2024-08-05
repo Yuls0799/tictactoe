@@ -105,6 +105,9 @@ h2 {
 .line {
     float: left;
     clear: left;
+    display: flex;
+    gap: 12px;
+    transform: scale(1.2);
 }
 
 .title {
@@ -122,6 +125,11 @@ section.frame {
     width: 162px;
     margin: auto;
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
 .t2 {
@@ -157,10 +165,12 @@ button {
 .checkmark {
     float: left;
     border: 2px solid #102155;
-    height: 50px;
-    border-radius: 0.5rem;
-    width: 50px;
+    height: 70px;
+    border-radius: 0.8rem;
+    width: 70px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #fffffff5;
 }
 
@@ -178,21 +188,20 @@ button {
 
 /* Style the checkmark/indicator */
 .container .p1 ~ .checkmark:after {
-  left: 8px;
-  top: -10px;
   position: relative;
   content: "\d7";
-  font-size: 62px;
   color: #ff7f00;
+  font-size: 80px;
 }
 
 .container .p2 ~ .checkmark:after {
-    left: 5px;
-      top: -18px;
       position: relative;
       content: "\25cb";
-      font-size: 68px;
       color: #007bff;
+      font-size: 80px;
+      margin-bottom: 10px;
+
+
 }
 /* checkbox styling section */
 
@@ -284,10 +293,6 @@ button {
 
 }
 
-#result-message{
-    font-size: 20px;
-}
-
 /* Config */
 
 .button-blue {
@@ -371,7 +376,6 @@ form button {
   /*circles*/
 .container-circle {
     display: flex;
-    height: 100px;
     gap: 50px; 
 }
 
