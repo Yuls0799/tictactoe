@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 updateScore(null);
                 showResultModal('Es un empate');
             } else if (isCpu && player.getTurn() === 2) {
-                setTimeout(cpuMove, 500);  // Espera medio segundo antes de que el CPU haga su movimiento
+                setTimeout(cpuMove, 500);  // cpu move
             }
         });
     });
