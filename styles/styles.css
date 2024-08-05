@@ -293,6 +293,10 @@ button {
 
 }
 
+#result-message{
+    font-size: 21px;
+}
+
 /* Config */
 
 .button-blue {
